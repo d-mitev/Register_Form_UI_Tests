@@ -17,9 +17,9 @@ public class RegistrationPage {
     @FindBy(id = "pwd")
     WebElement passwordField;
     @FindBy(id = "sel1")
-    Select jobTitleDropdown;
+    WebElement jobTitleDropdownElement;
     @FindBy(id = "sel2")
-    Select programmingLanguageDropdown;
+    WebElement programmingLanguageDropdownElement;
     @FindBy(xpath = "//button[text()='Register']")
     WebElement registerButton;
     @FindBy(xpath = "//button[text()='Cancel']")
@@ -51,11 +51,13 @@ public class RegistrationPage {
     }
 
     public void selectJobTitle(String jobTitle) {
+        Select jobTitleDropdown = new Select(jobTitleDropdownElement);
         jobTitleDropdown.selectByVisibleText(jobTitle);
     }
 
     public void selectProgrammingLanguage(String language) {
-        programmingLanguageDropdown.selectByVisibleText(language);
+        Select selectProgrammingLanguageDropdown = new Select(programmingLanguageDropdownElement);
+        selectProgrammingLanguageDropdown.selectByVisibleText(language);
     }
 
     public void clickRegisterButton() {

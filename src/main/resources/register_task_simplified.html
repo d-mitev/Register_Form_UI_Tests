@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Register Form</h2>
+            <hr />
+            <form id="controls">
+                  
+                        <div class="form-group" data-form-group-type="text-input">
+                            <label for="usr">First Name:</label>
+                            <input type="text" class="form-control" id="usr" />
+                        </div>
+                        <div class="form-group" data-form-group-type="text-input">
+                            <label for="usr">Last Name:</label>
+                            <input type="text" class="form-control" id="usr2" />
+                        </div>
+                        <div class="form-group" data-form-group-type="text-input">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" />
+                        </div>
+                        <div class="form-group" data-form-group-type="select-input">
+                            <label for="sel1">Job title</label>
+                            <select class="form-control" id="sel1">
+                                <option>QA</option>
+                                <option>Developer</option>
+                                <option>Automation QA</option>
+                                <option>UI/UX Desing</option>
+                            </select>
+                        </div>
+                        <div class="form-group" data-form-group-type="select-input">
+                            <label for="sel1">Programming language</label>
+                            <select class="form-control" id="sel2">
+                                <option>C#</option>
+                                <option>Java</option>
+                                <option>Python</option>
+                                <option>JavaScript</option>
+                            </select>
+                        </div>
+            </form>
+            <div id="footer">
+            	<button type="button" class="btn btn-primary">Register</button>
+            	<button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </body>
+</html>
