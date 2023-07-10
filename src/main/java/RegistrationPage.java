@@ -32,39 +32,48 @@ public class RegistrationPage {
     }
 
     public String getMainHeadingText() {
-        return mainHeading.getText();
+        String mainHeadingText = mainHeading.getText();
+        System.out.println("Main heading text is" + mainHeadingText);
+        return mainHeadingText;
     }
 
     public void enterFirstName(String firstName) {
+        System.out.println("Entering text in First Name field: " + firstName);
         firstNameField.clear();
         firstNameField.sendKeys(firstName);
     }
 
     public void enterLastName(String lastName) {
+        System.out.println("Entering text in Last Name field: " + lastName);
         lastNameField.clear();
         lastNameField.sendKeys(lastName);
     }
 
     public void enterPassword(String password) {
+        System.out.println("Entering text in Password field: " + password);
         passwordField.clear();
         passwordField.sendKeys(password);
     }
 
     public void selectJobTitle(String jobTitle) {
+        System.out.println("Choosing " + jobTitle + " from the Job Title dropdown");
         Select jobTitleDropdown = new Select(jobTitleDropdownElement);
         jobTitleDropdown.selectByVisibleText(jobTitle);
     }
 
     public void selectProgrammingLanguage(String language) {
+        System.out.println("Choosing " + language + " from the Programming Language dropdown");
         Select selectProgrammingLanguageDropdown = new Select(programmingLanguageDropdownElement);
         selectProgrammingLanguageDropdown.selectByVisibleText(language);
     }
 
     public void clickRegisterButton() {
+        System.out.println("Clicking on the Register button");
         registerButton.click();
     }
 
     public void clickCancelButton() {
+        System.out.println("Clicking on the Cancel button");
         cancelButton.click();
     }
 

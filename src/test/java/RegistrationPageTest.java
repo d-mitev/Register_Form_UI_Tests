@@ -8,7 +8,6 @@ public class RegistrationPageTest extends BaseTest{
     @Test
     public void verifySuccessfulRegistration() {
 
-
         driver.get(fileUnderTest);
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.enterAllFieldsAndRegister("Ivan",
