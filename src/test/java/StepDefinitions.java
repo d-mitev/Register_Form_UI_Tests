@@ -50,5 +50,6 @@ public class StepDefinitions {
 
     @Then("The response should return {string} equal to {string}")
     public void theResponseShouldReturnEqualTo(String arg0, String arg1) {
+
     }
 }

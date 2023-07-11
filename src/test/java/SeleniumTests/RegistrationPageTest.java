@@ -1,5 +1,8 @@
 package SeleniumTests;
 
+import Enums.JobTitlesEnum;
+import Enums.ProgrammingLanguageEnum;
+import Pages.RegistrationPage;
 import org.testng.annotations.Test;
 
 public class RegistrationPageTest extends BaseTest{
@@ -16,6 +19,7 @@ public class RegistrationPageTest extends BaseTest{
                                                     ProgrammingLanguageEnum.JAVA.getLanguageName());
 
         //TODO: add an assertion after the rest of the pages are implemented
+
     }
 
 }
