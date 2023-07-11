@@ -1,7 +1,6 @@
-import org.testng.Assert;
-import org.testng.annotations.Test;
+package SeleniumTests;
 
-import java.io.File;
+import org.testng.annotations.Test;
 
 public class RegistrationPageTest extends BaseTest{
 
