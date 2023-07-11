@@ -2,6 +2,6 @@
 
 The repository contains the solutions for the 2 assignments:
 
-- Page Object implementation is located in:   src/test/java/SeleniumTests/RegistrationPageTest.java
+- Page Object implementation is located in:   src/main/java/Pages/RegistrationPage.java
 
 - Cucumber scenarios are located in:          src/test/resources/features
